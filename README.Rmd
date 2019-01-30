@@ -3,7 +3,8 @@ title: "General Classification"
 author: "Delermando Branquinho Filho"
 date: "January 02, 2019"
 output:
-  html_document: default
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE,echo=FALSE,results=F,message=F}

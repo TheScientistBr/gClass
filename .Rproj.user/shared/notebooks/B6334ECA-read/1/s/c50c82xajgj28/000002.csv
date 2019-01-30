@@ -1,4 +1,0 @@
-"0","library(""plot3D"",quietly = T,verbose = F,warn.conflicts = F)"
-"2","package ‘plot3D’ was built under R version 3.4.4"
-"0","scatter3D(dataset$x,dataset$y,dataset$z,colvar = dataset$label,"
-"0","          pch = 19, cex = 0.5,bty = ""g"",ticktype = ""detailed"",main = ""disease"")"
