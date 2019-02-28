@@ -22,9 +22,7 @@ In other hand we show you bellow a graphic we the data in 3D. It is not a good i
 
 We try to see any correlation between all variable. The graphs below show us this relationship.
 
-![](README_files/figure-markdown_github/chart_correlation-1.png)
-
-As shown, there is no relationship between any variables. Values are below the weak correlation. Other view or analyse is the distribution of the data, all variable (x, y and z) have a uniform distribution.
+![](README_files/figure-markdown_github/chart_correlation-1.png) As shown, there is no relationship between any variables. Values are below the weak correlation. Other view or analyse is the distribution of the data, all variable (x, y and z) have a uniform distribution.
 
 Step 1 - Answering the first question
 -------------------------------------
@@ -32,6 +30,8 @@ Step 1 - Answering the first question
 On this step we are using Logistic Regression model to try classification the dataset about *label* variable.
 
 Like the problem ask, we try to a simple method like split dataset with 70% for train and 30% to test using glm algorithm.
+
+#### summarize results
 
     ## Confusion Matrix and Statistics
     ## 
@@ -61,6 +61,25 @@ Like the problem ask, we try to a simple method like split dataset with 70% for 
     ## 
 
 The accuracy is 0.559, not so good because it's closer to a draw or a coin toss. We are in a 95% confidence interval, that means between 0.541, 0.5769.
+
+#### Looking for Multicollinearity
+
+In statistics, multicollinearity (also collinearity) is a phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy. In this situation the coefficient estimates of the multiple regression may change erratically in response to small changes in the model or the data. Multicollinearity does not reduce the predictive power or reliability of the model as a whole, at least within the sample data set; it only affects calculations regarding individual predictors. That is, a multivariate regression model with collinear predictors can indicate how well the entire bundle of predictors predicts the outcome variable, but it may not give valid results about any individual predictor, or about which predictors are redundant with respect to others.
+
+    ##        x        y        z 
+    ## 1.000087 1.000107 1.000043
+
+All values are near to one, it is good or expected.
+
+#### Residual Analysis
+
+The difference between the observed value of the dependent variable (*y*) and the predicted value (*ŷ*) is called the residual (*e*). Each data point has one residual.
+
+Residual = Observed value - Predicted value *e* = *y* − *ŷ*
+
+Both the sum and the mean of the residuals are equal to zero. That is, *Σ**e* = 0 and *e* = 0.
+
+![](README_files/figure-markdown_github/Residuos-1.png)
 
 Step 2
 ------

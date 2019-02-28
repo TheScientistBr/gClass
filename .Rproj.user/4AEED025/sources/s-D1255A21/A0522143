@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1551294604526.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1338630108",
+    "id" : "A0522143",
+    "lastKnownWriteTime" : 1551357371,
+    "last_content_update" : 1551357371088,
+    "path" : "E:/gClass/README.Rmd",
+    "project_path" : "README.Rmd",
+    "properties" : {
+        "cursorPosition" : "114,16",
+        "last_setup_crc32" : "D1255A21c4e2d899",
+        "scrollLine" : "91",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
