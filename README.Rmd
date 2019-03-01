@@ -81,7 +81,7 @@ predictions <- as.factor(round(predict(model, data_test)))
 #### summarize results
 
 ```{r conf_matrix,echo=FALSE,results=T,message=F,warning=F}
-confusionMatrix(predictions, as.factor(data_test$label))
+        confusionMatrix(predictions, as.factor(data_test$label))
 ```
 
 The accuracy is $0.559$, not so good because it's closer to a draw or a coin toss. We are in a 95% confidence interval, that means between $0.541$, $0.5769$.
